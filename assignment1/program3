@@ -1,0 +1,26 @@
+// Program 3- Write a program to display student results. 
+//If the number is below 50 then print fail and if the number is above 50 then pass.
+
+function display_result(studentName,number)
+  {
+  if (number>50) {
+    console.log(studentName+" result: PASS");
+  }
+  else if(number<50){
+    console.log(studentName+" result: FAIL");
+  }
+ 
+ }
+
+ display_result("Saru",70)
+
+ display_result("Anu",80)
+
+ display_result("Aman",25)
+
+ display_result("Rohan",0)
+
+
+
+
+

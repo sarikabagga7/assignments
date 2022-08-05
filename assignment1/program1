@@ -1,0 +1,10 @@
+//Program 1- Write a program to add 2 numbers and print the result on the console.
+
+let num1 = 10, num2 = 25;
+
+// add two numbers
+let sum = num1 + num2;
+
+// display the sum
+console.log('Sum: ' + sum);
+

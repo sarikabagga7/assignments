@@ -1,0 +1,32 @@
+// Program 4- Write a program to display student results. 
+		// If number above 90 then grade A
+		// If number above 70 and below 90 then grade B
+    // If number above 50 and below 70 then grade C
+    // If number below 50 then Fail
+
+ let students = [{ name: 'Daisy',score: 65,}, { name: 'Dan', score: 99,}, {name: 'Emily',score: 77}, {name: 'Brendan',score: 49}];
+
+  students.forEach(function (student, i) {
+
+    if (student.score >= 90) {
+      student["grade"] = "A";
+      console.log(student.name +" result: Number " +student.score +" and A grade");
+     } 
+     
+     else if (student.score >= 70) {
+      student["grade"] = "B";
+      console.log(student.name +" result: Number " +student.score +" and B grade");
+     }
+     
+     else if (student.score >= 50) {
+      student["grade"] = "C";
+      console.log(student.name +" result: Number " +student.score +" and C grade");
+     } 
+     else {
+       student["grade"] = "Fail";
+       console.log(student.name +" result: Number " +student.score +" and Fail");
+     }
+  });
+  console.log('-----------------------Array with student grade-------------------', students);
+
+ 

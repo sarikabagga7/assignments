@@ -1,0 +1,40 @@
+Program 1- Write a program to add 2 numbers and print the result on the console.
+
+Program 2- Write a program to subtract 2 numbers and print the result on the console.
+
+Program 3- Write a program to display student results. If the number is below 50 then print fail and if the number is above 50 then pass.
+
+Program 4- Write a program to display student results. 
+		If number above 90 then grade A
+		If number above 70 and below 90 then grade B
+If number above 50 and below 70 then grade C
+If number below 70 then Fail
+		
+Program 5- Write a function that takes 3 numbers as arguments and perform multiplication of the numbers and returns the output. 
+
+
+let arrayStudents = [['Aakash', 95], ['Vinoth', 77], ['Divya', 88], ['Saru', 95], ['Anu', 68],['Rohan', 0]];
+
+ 
+ console.log(arrayStudents);
+
+ for(var i=0;i<arrayStudents.length;i++){      
+  for(var j=0;j<arrayStudents[i].length;j++){ 
+    //display_studentGradeResult();
+   // console.log(arrayStudents.length);
+   // console.log(arrayStudents[i].length);
+    console.log(i+" "+j);
+    console.log(arrayStudents[i][j])
+    //console.log(arrayStudents[i][j])
+    //console.log("---");
+  }
+}
+
+
+
+
+
+//console.log(typeof(arrayStudents));
+
+
+
