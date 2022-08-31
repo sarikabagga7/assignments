@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Program 2- Marriage Eligible Calculator  </h2>
+
+<script>
+
+let age;
+    let valid = false;
+
+    while (!valid) {
+    try{
+        age = parseInt(prompt("Please enter age"));
+
+        if (age<21 && !valid) {    
+        alert("Have some patience")
+        throw "Have some patience"  
+    }
+
+    valid=true;
+    
+}
+
+catch(err){
+
+}
+ }
+
+document.write (`Age  ${age} is eligible`);
+
+</script>
+
+</body>
+</html>
+

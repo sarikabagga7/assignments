@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Program 4- Write the same program with getter method</h2>
+
+<script>
+
+class Course{
+
+constructor(courseName,price,validity, trainerName,phoneNUmber){
+    this.courseName=courseName
+    this.price=price
+    this.validity=validity
+    this.trainerName=trainerName
+    this.phoneNUmber=phoneNUmber
+}
+
+showDetails()
+{
+
+    document.write (`Thank you for showing interest in ${this.courseName} - Current Price is  ${this.price} and validity of course is till  ${this.validity} If you have any query then reach out to ${this.trainerName} mobile - ${this.phoneNUmber}`);     
+   
+} 
+}
+
+let courseName = prompt("Please enter course Name !");
+let price = parseInt(prompt("Please enter price"));
+let validity = prompt("Please enter validity");
+let trainerName = prompt("Please enter trainer Name");
+let phoneNUmber = prompt("Please enter phone number");
+
+//let course1=new Course("JavaScript",4000,"6 months","Mukesh Otwani","94974783748")
+let course1=new Course(courseName,price,validity,trainerName,phoneNUmber)
+course1.showDetails()
+
+
+
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Program 5- Display Course Information using Get and Set </h2>
+
+<script>
+
+class Course{
+
+    constructor(courseName,price,validity, trainerName,){
+    this.courseName=courseName
+    this.price=price
+    this.validity=validity
+    this.trainerName=trainerName
+  
+}
+    get showCourseDetails()
+    {
+        return `Thank you for showing interest in ${this.courseName} - Current Price is  ${this.price} and validity of course is till  ${this.validity} If you have any query then reach out to ${this.trainerName} mobile - ${this.phoneNUmber}`
+    } 
+
+    set phone(phoneNUmber)
+    {
+    this.phoneNUmber=phoneNUmber
+}
+   
+}
+
+let courseName = prompt("Please enter course Name !");
+let price = parseInt(prompt("Please enter price"));
+let validity = prompt("Please enter validity");
+let trainerName = prompt("Please enter trainer Name");
+let phoneNUmber = prompt("Please enter phone number");
+
+// let course1=new Course("JavaScript",4000,"6 months","Mukesh Otwani","94974783748")
+let course1=new Course(courseName,price,validity,trainerName)
+course1.phone=phoneNUmber
+
+document.write (course1.showCourseDetails);     
+
+</script>
+
+</body>
+</html>
+
